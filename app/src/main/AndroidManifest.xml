@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SoraBookFinder">
         <activity
-            android:name=".ActivitySignUp"
+            android:name=".ActivityHome"
             android:exported="false" />
         <activity
-            android:name=".Login"
-            android:exported="false" />
+            android:name=".ActivitySignUp"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
