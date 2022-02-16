@@ -31,7 +31,6 @@
         app:icon="@drawable/ic_chevron_left"
         app:iconPadding="-4dp"
         app:iconSize="24dp"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -49,12 +48,13 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardView_registro"
+        style="?attr/materialCardViewElevatedStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintTop_toBottomOf="@id/textView1"
-        style="?attr/materialCardViewElevatedStyle">
+        tools:layout_editor_absoluteX="16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -68,89 +68,96 @@
                 android:layout_margin="16dp"
                 android:text="Registra tu información"
                 android:textAlignment="center"
-                android:textStyle="bold"
                 android:textColor="@color/marine_blue"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+
+
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/til_usuario"
-                android:layout_margin="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/txtUser"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView_tituloCardV">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_reg_user"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Usuario"
-                    android:text="FerLima"
-                    android:inputType="text"
-                    />
-
+                    android:inputType="textPersonName"
+                    tools:ignore="TextContrastCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_correo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/til_correo"
-                android:layout_margin="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/txtEmail"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/til_usuario">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_reg_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Correo"
-                    android:text="example@gmail.com"
-                    android:inputType="text"
-                    />
-
+                    android:inputType="textEmailAddress"
+                    tools:ignore="TextContrastCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
-             <com.google.android.material.textfield.TextInputLayout
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 android:id="@+id/til_pwd1"
-                 android:layout_margin="16dp"
-                 app:layout_constraintTop_toBottomOf="@+id/til_correo"
-                 app:layout_constraintEnd_toEndOf="parent"
-                 app:layout_constraintStart_toStartOf="parent">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_pwd1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/txtPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_correo">
 
-                 <com.google.android.material.textfield.TextInputEditText
-                     android:layout_width="match_parent"
-                     android:layout_height="wrap_content"
-                     android:hint="Contraseña"
-                     android:inputType="textPassword"/>
-
-
-             </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_reg_pass1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_pwd2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="16dp"
-                android:layout_marginBottom="32dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="1dp"
+                android:hint="@string/txtConfirmPassword"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/til_pwd1">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_reg_pass2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Confirmar contraseña"
-                    android:inputType="textPassword" />
-
-
+                    android:inputType="textPassword"
+                    tools:ignore="TextContrastCheck" />
             </com.google.android.material.textfield.TextInputLayout>
-
-
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

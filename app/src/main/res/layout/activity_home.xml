@@ -49,39 +49,104 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textName"
+        app:srcCompat="@drawable/dividerbookapp"
+        tools:layout_editor_absoluteY="80dp" />
 
-<com.google.android.material.card.MaterialCardView
-    android:id="@+id/cardView_registro"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="16dp"
-    app:cardCornerRadius="20dp"
-    app:layout_constraintTop_toBottomOf="@id/textName"
-    style="?attr/materialCardViewElevatedStyle">
+    <TextView
+        android:id="@+id/tv_maspopu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Más populares"
+        android:textColor="@color/sky_blue"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        app:layout_constraintBottom_toTopOf="@id/carouselpopularbookscardview"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+        android:id="@+id/carouselpopularbookscardview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_maspopu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/carouselpopularbookscardview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:background="@color/gray1"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_maspopu"/-->
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/textView_tituloCardV"
-            style="@style/MaterialAlertDialog.Material3.Title.Text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="Libros | Categorías | Autores"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textColor="@color/marine_blue"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView_registro"
+        style="?attr/materialCardViewElevatedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/carouselpopularbookscardview">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView_tituloCardV"
+                style="@style/MaterialAlertDialog.Material3.Title.Text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Libros | Categorías | Autores"
+                android:textAlignment="center"
+                android:textColor="@color/marine_blue"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-</com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:id="@+id/tv_radd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recién Agregados"
+        android:textColor="@color/sky_blue"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="271dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView_registro"
+        tools:ignore="TextContrastCheck"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recentlyAdded"
+        android:layout_width="409dp"
+        android:layout_height="314dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="416dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_radd"/>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

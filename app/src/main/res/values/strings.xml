@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">soraBookFinder</string>
+
+    <string name="img_populares">Libros más populares</string>
+    <string name="txtUser">Usuario</string>
+    <string name="txtEmail">Correo</string>
+    <string name="txtPassword">Contraseña</string>
+    <string name="txtConfirmPassword">Confirma Contraseña</string>
+
+    <string name="tv_detalles_title_book">%s</string>
+    <string name="tv_detalles_nombre_autor">%s</string>
+    <string name="tv_detalles_mas_titulos_autor">Más títulos del autor</string>
+    <string name="tv_detalles_descripcion_libro">Descripcion</string>
+    <string name="tv_detalles_detalles_libro">Detalles</string>
+    <string name="tv_detalles_autor">%s</string>
+    <string name="tv_detalles_categoria">%s</string>
+    <string name="tv_detalles_contenido_autor">%s</string>
+    <string name="tv_detalles_cardview_2">%s</string>
+
+    <string name="loremIpsumShort">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec luctus dui. Sed ut magna lorem.
+        Morbi eu velit libero. Suspendisse potenti. Pellentesque risus arcu, porta rutrum risus at, congue finibus nisl.
+        Suspendisse eu placerat nulla, non iaculis quam. Vivamus fringilla nulla ac feugiat tincidunt.</string>
+
+    <string name="loremIpsumLong">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec luctus dui. Sed ut magna lorem.
+        Morbi eu velit libero. Suspendisse potenti. Pellentesque risus arcu, porta rutrum risus at, congue finibus nisl.
+        Suspendisse eu placerat nulla, non iaculis quam. Vivamus fringilla nulla ac feugiat tincidunt.
+
+        Morbi lobortis placerat vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Morbi id odio suscipit, aliquam libero a, dignissim odio. Nunc ullamcorper nulla quis aliquam fringilla.
+        Nunc mattis, nibh ac fringilla suscipit, eros urna facilisis est, eget imperdiet quam magna vel ante.
+        Ut viverra ornare nibh, nec molestie augue consequat id. Quisque at augue feugiat, facilisis diam at, auctor orci.
+
+        Curabitur turpis est, facilisis at odio vel, lacinia facilisis sapien.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Curabitur justo ligula, fringilla eu fermentum sit amet, eleifend ut urna.
+        Curabitur placerat lectus a velit euismod rutrum. In blandit pulvinar nisi in lacinia.
+        Maecenas luctus nibh sed ipsum maximus, in tincidunt sem faucibus. Quisque accumsan mi posuere est pulvinar sodales.
+        Suspendisse maximus eros lacus, eget tristique ipsum dapibus a. Curabitur at vehicula felis.
+        Phasellus quis quam eget nisl semper vestibulum id eget dui.
+        Fusce dapibus eleifend orci, vel lobortis tellus posuere eu.
+        Nulla justo tellus, suscipit a ornare at, condimentum in nunc. Proin ac nisl sed turpis imperdiet lacinia.</string>
+
 </resources>

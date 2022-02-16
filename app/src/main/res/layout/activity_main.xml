@@ -53,6 +53,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -74,6 +75,7 @@
         tools:layout_editor_absoluteX="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_pwd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

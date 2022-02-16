@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SoraBookFinder">
         <activity
+            android:name=".ActivityDetails"
+            android:exported="false" />
+        <activity
             android:name=".ActivityHome"
             android:exported="false" />
         <activity
